@@ -1,3 +1,18 @@
+/*
+Author: Chris Garry
+Description: The fizzbuzz task goes as follows:
+            
+            1. Let integer x iterate from 1 up to 100
+            2. If x is divisible by 3, print "fizz"
+            3. If x is divisible by 5, print "buzz"
+            4. If x is divisible by both 3 and 5, print "fizzbuzz"
+            5. Otherwise, print x
+
+
+This is a very rudimentary solution.
+*/
+
+
 #include "stdio.h"
 
 void main(int argc, char argv[]){
