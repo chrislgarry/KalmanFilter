@@ -1,3 +1,5 @@
+//A method to reverse a string and return the result.
+
 char *string_reverse2(const char *string){ 
 
     //Get size of string
@@ -9,29 +11,22 @@ char *string_reverse2(const char *string){
         len++;
     }
 
-    //If string is length 0, nothing to reverse
+    //If string is length 0 or 1, nothing to reverse
     if(len < 2){
         return string;
     }
   
-    //Allocate memory to store reversed string
+    //Allocate memory to store reversed string 
+    //while initializing nul terminator via calloc
     char *temp = calloc(len+1, sizeof(char));
-    //Terminate with nul
-    temp[len] = '\0';
     
-    //Copy contents of string into modify-able variable
-    int i;
-    for(i=0; i< len; i++){
-	    temp[i] = string[i];
-    }
-	
+    //swap ;eft and right characters in string
     int left = 0;
     int right = len-1;
-	
-    while(left != right){
+    while(left <= right){
 	temp[left] = string[right];
-	temp[right] = string[left]; 
-	left++;
+	temp[right] = string[left];
+        left++;
 	right--;
     }
 	
