@@ -10,7 +10,7 @@ char *string_reverse2(const char *string){
     }
 
     //If string is length 0, nothing to reverse
-    if(len <= 1){
+    if(len < 2){
         return string;
     }
   
