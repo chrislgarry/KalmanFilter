@@ -1,7 +1,6 @@
-#include <string.h>
-
 char *string_reverse2(const char *string){ 
 
+    //Get size of string
     size_t len = 0;
     char *str = string;
 
@@ -10,26 +9,31 @@ char *string_reverse2(const char *string){
         len++;
     }
 
-    if(len < 1){
+    //If string is length 0, nothing to reverse
+    if(len <= 1){
         return string;
     }
   
-	char *temp = calloc(len+1, sizeof(char));
-	temp[len] = '\0';
-	int i;
+    //Allocate memory to store reversed string
+    char *temp = calloc(len+1, sizeof(char));
+    //Terminate with nul
+    temp[len] = '\0';
+    
+    //Copy contents of string into modify-able variable
+    int i;
     for(i=0; i< len; i++){
 	    temp[i] = string[i];
-	}
+    }
 	
-	int left = 0;
-	int right = len-1;
+    int left = 0;
+    int right = len-1;
 	
-	while(left != right){
-		temp[left] = string[right];
-		temp[right] = string[left]; 
-		left++;
-		right--;
-	}
+    while(left != right){
+	temp[left] = string[right];
+	temp[right] = string[left]; 
+	left++;
+	right--;
+    }
 	
     return temp;
 }
