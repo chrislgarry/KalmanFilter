@@ -13,7 +13,7 @@ void string_reverse1(char *string){
         int left = 0;
         int right = len-1;
 
-        while(left != right){
+        while(left <= right){
 
             char temp1 = string[left];
 
@@ -45,5 +45,9 @@ void main(int argc, char argv[]){
     char string3[] = "apples!";
     string_reverse1(string3);
     printf("%s", string3);
+    
+    char string4[] = "apples";
+    string_reverse1(string4);
+    printf("%s", string4);
 
 }
