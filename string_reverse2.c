@@ -33,7 +33,7 @@ char *string_reverse2(const char *string){
     return temp;
 }
 
-void main(int argc, char argv[]){
+void main(int argc, char *argv[]){
 
     const char string[] = "";
     printf("%s\n", string_reverse2(string));
