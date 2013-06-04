@@ -28,7 +28,7 @@ void string_reverse1(char *string){
     return;
 }
 
-void main(int argc, char argv[]){
+void main(int argc, char *argv[]){
 
     char string[] = "";
     string_reverse1(string);
