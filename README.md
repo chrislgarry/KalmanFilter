@@ -1,4 +1,5 @@
 playground
 ==========
 
-Just a collection of programs which serve no practical applications other than for my own enjoyment.
+
+Collection of programs and scripts that I've made for both pratical reasons and just for fun.
