@@ -1,3 +1,5 @@
+//A method to reverse a string in place
+
 void string_reverse1(char *string){ 
     
     size_t len = 0;
