@@ -1,3 +1,5 @@
+' Script for tallying grades from a text dump of online transcript
+
 Const ForReading = 1
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objTextFile = objFSO.OpenTextFile("PATH/TO/TEXTFILE", ForReading)
